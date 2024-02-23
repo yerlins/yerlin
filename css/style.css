@@ -5,16 +5,19 @@
 }
 
 .container{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 695px;
-    background: gray;
+    height: 100vh;
+    background: rgb(163, 159, 159);
 }
 
 .parrafo{
     width: 500px;
-    background: beige;
+    background: rgb(150, 144, 144);
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    text-align: justify;
 }
