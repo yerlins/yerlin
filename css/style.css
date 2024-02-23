@@ -5,18 +5,19 @@
 }
 
 .container{
-    width: 20%;
+    width: 30%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    padding: 50px;
+    gap: 5px;
 }
 
-.palabras{ 
-    width: 20%;
-    height: 60%;
-}
-
-.botones{
-    width: 70px;
-    height: 60%;    
-    justify-content: flex-end;
+.caja1, .caja2, .caja3, .caja4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 20px;
+    background: gray;
 }
