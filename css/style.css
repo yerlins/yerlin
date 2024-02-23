@@ -10,14 +10,24 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
 }
 
 .menus{
-    border: solid blue;
-    justify-content: space-around
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .spanish, .english{
     background: gray;
     color: white;
+    width: 100px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.box:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
