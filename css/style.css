@@ -2,5 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: blue;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 695px;
+    background: gray;
+}
+
+.parrafo{
+    width: 500px;
+    background: beige;
+    justify-content: center;
+    align-items: center;
 }
