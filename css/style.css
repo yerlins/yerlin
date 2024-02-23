@@ -2,5 +2,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: blue;
+}
+
+.container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menus{
+    border: solid blue;
+    justify-content: space-around
+}
+
+.spanish, .english{
+    background: gray;
+    color: white;
 }
