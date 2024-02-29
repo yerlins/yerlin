@@ -1,62 +1,3 @@
-def mostrar_menu():
-    print("¡Bienvenido a nuestra panadería!")
-    print("Menú: pam")
-    print("1. Paan salados 1000, ")
-    print("2.pan de queso 5000,")
-    print("3.Pan de centeno 9000,")
-    print("4.Pan de cebada. 6000,")
-    print("5.Pan de avena 7000,")  
-    print("6.Pan de maíz 4000,")
-    print("7.Pan de soja 5000,")
-    print("8.Pan de espelta 7000"),
-    print("9.Pan de arroz 7000,")
-   
-def hacer_compra(menu):
-    total = 0
-    while True:
-        mostrar_menu()
-        seleccion = input("Número de categoría: ")
-        if seleccion.lower() == 'fin':
-            break
-        elif seleccion.isdigit() and 1 <= int(seleccion) <= len(menu):
-            categoria = list(menu.keys())[int(seleccion) - 1]
-            precio = menu[categoria]["precio"]
-            total += precio
-            print(f"Producto seleccionado: {categoria} - Precio: ${precio}")
-            if "sabores" in menu[categoria]:
-                print("Sabores disponibles:")
-                for sabor in menu[categoria]["sabores"]:
-                    print("- " + sabor)
-        else:
-            print("Por favor, ingresa un número válido de categoría.")
-    print(f"Total a pagar: ${total}")
-
-
-
-
-print("1.panes")
-print("2.Pasteles")
-print("2.Pasteles")
-
-
-input("Por favor, elige el número correspondiente a la categoría que deseas comprar")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def mostrar_menu(menu):
    print("Menú: panes")
 
@@ -131,16 +72,15 @@ menu = {
    }
 }
 
-
 print("""
- _____   _            _        _    _   _   _    _   _   _
-| ____| | |          | |      | |  | | | | |  | | | | | | |
-| |__   | |__     ___| | __   | |  | | | | |  | |_| |_| | |
-|___ \  | '_ \   / __| |/ /   | |  | | | | |  |  _   _  | |
- ___) | | | | | | (__|   <    | |__| |_| | |  | | | | | | |
-|____/  |_| |_|  \___|_|\_\    \____/|___| |_| |_| |_| |_|
-""")
-print("¡Bienvenido a nuestra panadería!\n")
+ _____  _                                   _      _                                           _                                                    _                    
+| ___ \(_)                                 (_)    | |                                         | |                                                  | |                   
+| |_/ / _   ___  _ __  __   __  ___  _ __   _   __| |  ___     __ _   _ __   _   _   ___  ___ | |_  _ __   __ _     _ __    __ _  _ __    __ _   __| |  ___  _ __   __ _ 
+| ___ \| | / _ \| '_ \ \ \ / / / _ \| '_ \ | | / _` | / _ \   / _` | | '_ \ | | | | / _ \/ __|| __|| '__| / _` |   | '_ \  / _` || '_ \  / _` | / _` | / _ \| '__| / _` |
+| |_/ /| ||  __/| | | | \ V / |  __/| | | || || (_| || (_) | | (_| | | | | || |_| ||  __/\__ \| |_ | |   | (_| |   | |_) || (_| || | | || (_| || (_| ||  __/| |   | (_| |
+\____/ |_| \___||_| |_|  \_/   \___||_| |_||_| \__,_| \___/   \__,_| |_| |_| \__,_| \___||___/ \__||_|    \__,_|   | .__/  \__,_||_| |_| \__,_| \__,_| \___||_|    \__,_|
+                                                                                                                   | |                                                   
+   """)              
 print("Por favor, seleccione la opción válida:")
 print("1. Panes")
 print("2. Pasteles")
